@@ -79,14 +79,3 @@
 //   return Math.floor(Math.random()*(max-min+1)+min)
 // }
 // console.log(getRandomBetween(10, 42)) //задача на получение рандомного числа в пределах мин и макс
-
-
-
-
-
-
-
-
-
-
-
