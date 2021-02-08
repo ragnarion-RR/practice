@@ -83,3 +83,44 @@
 // const logWithLastName = createMember ('Sergey')  //фуннкция name замкнула себя и не меняется
 // console.log(logWithLastName(' rr'))
 // console.log(logWithLastName(' ragnar'))  //а фамилии можно варьировать
+
+
+//6.Рекурсивная функция, вызывает сама себя на повторе, пока соблюдается условие
+// 
+// var washNextItem = function(itemsLeft) {
+//   itemsLeft--;
+//   console.log('В раковине осталось ' +itemsLeft+ ' предметов посуды');
+//   if (itemsLeft > 0) {
+//     washNextItem(itemsLeft);
+//   }
+// };
+// washNextItem(10);
+
+
+// ЦИКЛЫ. while/do...while
+// используем while (выполняем условие в скобках, пока в boolean оно true)
+// var washNextItem = function(itemsLeft) {           //как и пример выше
+//   while(itemsLeft--) {
+//   console.log('В раковине осталось ' +itemsLeft+ ' предметов посуды');
+//   }
+// };
+// washNextItem(10);
+
+
+//или можно написать следующим образом
+// var washNextItem = function(itemsLeft) {           //как и пример выше
+//   while(itemsLeft-->0) {
+//   console.log('В раковине осталось ' +itemsLeft+ ' предметов посуды');
+//   }
+// };
+// washNextItem(10);
+
+// цикл for...
+// var printNames = function (names) {
+//   for (var i=0; i< names.length; i++) {
+//     console.log('Элемент '+i+ ':' + names[i]);
+//   }
+// }
+// printNames(['Гена','Вася','Слава','Макс'])
+// console.log('-------------------------------')
+// printNames(['Люда','Кира','Нюша','Кнопка'])
