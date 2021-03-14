@@ -150,3 +150,119 @@
 // console.log(allBudget)
 
 // const displayItems = allItems.filter(item => item.name.contains('phone') !==-1) //пример поиска
+
+
+
+
+
+
+// ---------------------------------------------------------------
+// работа с массивом волшебников
+
+var wizards = [
+  {
+    name:'Пендальф',
+    eyesColor: 'blue',
+    coatColor: 'green'
+  },
+  {
+    name:'Баба Яга',
+    eyesColor: 'black',
+    coatColor: 'gray'
+  },
+  {
+    name:'Саруман',
+    eyesColor: 'white',
+    coatColor: 'yellow'
+  },
+  {
+    name:'Радагаст',
+    eyesColor: 'red',
+    coatColor: 'blue'
+  }
+];
+
+// // 1. создание массива с именами обычным перебором
+// var wizardNames = [];
+// for (var i=0; i < wizards.length; i++) {
+//   wizardNames[i] = wizards[i].name;
+// }
+// console.log(wizardNames);
+
+
+// // 2. Метод push, хорош тем, что можно добавить кого-то в 
+// // конец массива, например, просто добавив Кащея в начальный массив
+// var wizardNames = ['Кащей'];
+// for (var i=0; i < wizards.length; i++) {
+//   wizardNames.push(wizards[i].name);
+// }
+// console.log(wizardNames);
+
+// // 3. Метод pop, удаляющий последний элемент
+// var wizardNames = [];
+// for (var i=0; i < wizards.length; i++) {
+//   wizardNames.push(wizards[i].name);
+// }
+// console.log(wizardNames);
+// wizardNames.pop();
+// console.log(wizardNames);
+
+// 4. Метод shift/unshift выполняет то же, только работает с 
+// началом массива
+
+// // 5. ИТЕРАТОРЫ (повторяющий метод), метод map (мапирование)
+// var wizardNames = wizards.map(function (wizard) {
+//   return wizard.name; //перебирает все элем и оставляет имена
+// });
+// console.log(wizardNames);
+
+// var wizardNames = wizards.map(function (wizard, index, array) {
+//   return wizard.name 
+//   + ' '
+//   + (index +1)
+//   + '/'
+//   + array.length; //показывает числовой показатель элемента
+// });
+// console.log(wizardNames);
+
+// // 6. ИТЕРАТОРЫ, метод filter
+// var blueEyesWizards = wizards.filter(function (wizard) {
+//   return wizard.eyesColor === 'blue'; //ищет голубые глаза
+// });
+// console.log(blueEyesWizards); //выводит все свойства найденного объекта
+
+// var blueEyesWizards = wizards.filter(function (wizard) {
+//   return wizard.eyesColor === 'blue'; //ищет голубые глаза
+// }).map(function(wizard) {  //мапированием выводит только имя
+//   return wizard.name;
+// });
+// console.log(blueEyesWizards);
+
+// // 7. ИТЕРАТОРЫ, метод forEach (просто пребор всего массива без возврата)
+// wizards.forEach(function (wizard) {
+//   console.log(wizard.name + ', цвет глаз: ' + wizard.eyesColor);
+// }); //forEach нельзя остановить (весь массив перебирает сразу), а цикл for можно остановить
+
+// 8. Сортировка методом sort
+//  метод slice позволяет делать полную копию массива и
+// уже потом работать с ним (исходный массив останется неизм)
+
+// Вообще, есть методы, которые изменяют массив, 
+// не изменяют массив, и циклические
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
